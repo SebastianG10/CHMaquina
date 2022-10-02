@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">        
+
+<head>
+    <title>CH Maquina</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <script defer type="module" src="./resources/js/index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="cajonesHeader izquierdaH">
+            <button type="button" id="attachment"> <img class="icono" src="./resources/images/subir-archivo.png"/></button>
+            <input id="file-input" type="file" style="display:none" multiple/>
+            <button type="button" id="ejecutar"> <img class="iconoEspecial" src="./resources/images/play-button-arrowhead.png"/></button>
+            <button type="button" id="pausar"> <img class="icono" src="./resources/images/boton-de-pausa.png"/></button>
+            <button type="button" id="pasoapaso"> <img class="icono" src="./resources/images/dos-flechas-de-avance-rapido.png"/></button>
+        </div>
+        <div class="cajonesHeader centroH">
+            <label for="">Memoria</label>
+            <input type="number" id="espacioMemoria"></input>
+
+        </div>
+        <div class="cajonesHeader derechaH">
+            <label for="">Kernel</label>
+            <input type="number" id="espacioKernel"></input>
+            <button type="button"> <img class="iconoX" src="./resources/images/eliminar-simbolo.png"/></button>
+        </div>
+
+
+    </header>
+    <main>
+
+
+        <section class="izquierda">
+            <div class="pantalla" id="contenedorPantalla">
+            </div>
+            <div class="codigo">
+                <textarea name="" id="contenedorCodigo"></textarea>
+            </div>
+        </section>
+
+
+        <section class="centro">
+            <div class="acumuladora">
+                <div class="cajonesAcumuladora" id="contenedorAcumuladora">
+        
+                </div>
+                <div class="cajonesAcumuladora" id="contenedorPc">
+                </div>
+            </div>
+            <div class="variables">
+                <div class="cajonHeader">
+                    <div class="cajones">
+                        <h2>Posicion</h2>
+                    </div>
+                    <div class="cajones">
+                        <h2>Variables</h2>
+                    </div>
+                </div>
+                <div class="cajonMain" id="contenedorVariables">
+               
+                </div>
+            </div>
+            <div class="etiquetas">
+                <div class="cajonHeader">
+                    <div class="cajones">
+                        <h2>Posicion</h2>
+                    </div>
+                    <div class="cajones">
+                        <h2>Etiquetas</h2>
+                    </div>
+                </div>
+                <div class="cajonMain" id="contenedorEtiquetas">
+               
+                </div>
+            </div>
+            <div class="programa">
+                <div class="cajonHeader">
+                    <div class="cajonesPrograma">
+                        <h2>ID</h2>
+                    </div>
+                    <div class="cajonesPrograma">
+                        <h2>Programa</h2>
+                    </div>
+                    <div class="cajonesPrograma">
+                        <h2>#Ins</h2>
+                    </div>
+                    <div class="cajonesPrograma">
+                        <h2>RB</h2>
+                    </div>
+                    <div class="cajonesPrograma">
+                        <h2>RLC</h2>
+                    </div>
+                    <div class="cajonesPrograma">
+                        <h2>RLP</h2>
+                    </div>
+                </div>
+                <div class="cajonMain" id="contenedorPrograma">
+  
+                </div>
+            </div>
+        </section>
+
+
+        <section class="derecha">
+            <div class="memoria">
+                <div class="cajonesMemoria">
+                    <h1 class="letraNegra">Direccion</h1>
+                </div>
+                <div class="cajonesMemoria">
+                    <h1 class="letraNegra">Contenido</h1>
+                </div>
+            </div>
+            <div class="tablas" id="tablaMemoria">
+               
+          
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
